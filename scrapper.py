@@ -2,13 +2,11 @@
 from bs4  import BeautifulSoup      #import BeautifulSoup package
 import requests                     #import requests 
 import io     
-import mysql.connector
-import _mysql     
+from connection import connection
+
 from datetime import date, datetime, timedelta                 #import io for file read write
 
-connection = mysql.connector.connect(user='root', password='',
-                              host='127.0.0.1',
-                              database='spyder')
+
 
 created_at = datetime.now().date()
 updated_at = datetime.now().date()
